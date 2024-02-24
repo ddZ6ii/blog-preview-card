@@ -21,10 +21,31 @@
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Blog preview card</title>
   </head>
+
   <body>
-    Learning Published 21 Dec 2023 HTML & CSS foundations These languages are
-    the backbone of every website, defining structure, content, and
-    presentation. Greg Hooper
+    <article>
+      <header>
+        <img src="assets/images/illustration-article.svg" alt="illustration" />
+        <div class="course__badge">Learning</div>
+        <p>
+          Published
+          <time pubdate datetime="2023-12-21" title="December 21st, 2023"
+            >21 Dec 2023</time
+          >
+        </p>
+      </header>
+      <div class="course__content">
+        <h2>HTML & CSS foundations</h2>
+        <p>
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <footer>
+        <img src="assets/images/image-avatar.webp" alt="avatar" />
+        <address class="course__author">Greg Hooper</address>
+      </footer>
+    </article>
 
     <footer>
       <p>
