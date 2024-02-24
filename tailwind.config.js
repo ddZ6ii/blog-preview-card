@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#f4d04e',
-        neutrals: {
+        neutral: {
           50: '#ffffff',
           400: '#808080',
           900: '#121212',
@@ -17,6 +17,10 @@ module.exports = {
       fontWeight: {
         semibold: '600',
         extrabold: '800',
+      },
+      boxShadow: {
+        base: '8px 8px 0px rgba(0, 0, 0, 1)',
+        thicker: '12px 12px 0px rgba(0, 0, 0, 1)',
       },
     },
   },

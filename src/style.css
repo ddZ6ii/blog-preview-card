@@ -18,3 +18,13 @@
   font-weight: 800;
   font-style: normal;
 }
+
+/* ______________________________________________________________________ *\
+   Default base styles
+\* ______________________________________________________________________ */
+@layer base {
+  body {
+    font: 1rem / 1.5 theme('fontFamily.sans');
+    @apply text-neutral-900;
+  }
+}
