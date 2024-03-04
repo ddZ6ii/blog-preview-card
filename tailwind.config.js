@@ -7,7 +7,7 @@ module.exports = {
         primary: '#f4d04e',
         neutral: {
           50: '#ffffff',
-          400: '#808080',
+          400: '#727272',
           900: '#121212',
         },
       },

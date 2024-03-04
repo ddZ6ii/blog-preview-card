@@ -28,3 +28,25 @@
     @apply text-neutral-900;
   }
 }
+
+/* ______________________________________________________________________ *\
+   Component base styles
+\* ______________________________________________________________________ */
+@layer components {
+  .footer__link {
+    &,
+    &:link {
+      @apply text-[#6931ca] underline underline-offset-4;
+    }
+    &:visited {
+      @apply text-neutral-500;
+    }
+    &:hover,
+    &:focus-visible {
+      @apply text-pink-600 no-underline;
+    }
+    &:active {
+      @apply text-neutral-900;
+    }
+  }
+}

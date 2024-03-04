@@ -22,67 +22,89 @@
     <title>Frontend Mentor | Blog preview card</title>
   </head>
 
-  <body class="bg-primary grid h-dvh grid-rows-[1fr_auto] items-center py-8">
-    <article
-      class="shadow-base [&:has(a:hover)]:shadow-thicker container mx-auto max-w-[340px] rounded-2xl bg-neutral-50 p-6 transition-all"
-    >
-      <header class="mb-3 text-sm">
+  <body class="grid h-dvh place-content-center gap-8 bg-primary p-4">
+    <main>
+      <article
+        class="container mx-auto grid max-w-[340px] gap-4 rounded-2xl bg-neutral-50 p-6 shadow-base transition-all [&:has(a:hover)]:shadow-thicker"
+      >
+        <h1 class="sr-only">Blog preview</h1>
         <img
           src="assets/images/illustration-article.svg"
-          alt="illustration"
-          class="mx-auto mb-6 rounded-xl"
+          alt=""
+          class="mx-auto rounded-xl"
         />
-        <div
-          class="bg-primary mb-2 inline-block rounded-md px-2 py-1 font-extrabold"
-        >
-          Learning
-        </div>
-        <p>
-          Published
-          <time pubdate datetime="2023-12-21" title="December 21st, 2023"
-            >21 Dec 2023</time
-          >
-        </p>
-      </header>
-      <div>
-        <h2 class="mb-2 text-xl font-bold">
+        <section aria-label="Info" class="text-sm">
           <a
             href="#"
-            class="hover:text-primary outline-primary inline-block w-full"
-            >HTML & CSS foundations</a
+            title="Category"
+            class="mb-2 inline-block rounded-md bg-primary px-2 py-1 font-extrabold"
           >
-        </h2>
-        <p class="text-sm font-semibold text-neutral-400">
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
-      </div>
-      <footer class="mt-6 flex flex-wrap items-center gap-4">
-        <img
-          src="assets/images/image-avatar.webp"
-          alt="avatar"
-          class="max-w-10"
-        />
-        <address>
-          <span class="font-extrabold not-italic">Greg Hooper</span>
-        </address>
-      </footer>
-    </article>
-
+            Learning
+          </a>
+          <p>
+            Published
+            <time datetime="2023-12-21" title="December 21st, 2023"
+              >21 Dec 2023</time
+            >
+          </p>
+        </section>
+        <div>
+          <h2 class="mb-2 text-xl font-bold">
+            <a
+              href="#"
+              class="inline-block w-full outline-primary hover:text-primary"
+              >HTML & CSS foundations</a
+            >
+          </h2>
+          <p class="text-sm font-semibold text-neutral-400">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <footer class="flex flex-wrap items-center gap-4">
+          <picture>
+            <source
+              srcset="
+                assets/images/image-avatar-40.webp  1x,
+                assets/images/image-avatar-60.webp  1.5x,
+                assets/images/image-avatar-80.webp  2x,
+                assets/images/image-avatar-120.webp 3x
+              "
+            />
+            <img
+              srcset="
+                assets/images/image-avatar-40.png  1x,
+                assets/images/image-avatar-60.png  1.5x,
+                assets/images/image-avatar-80.png  2x,
+                assets/images/image-avatar-120.png 3x
+              "
+              src="assets/images/image-avatar-40.png"
+              alt=""
+              class="max-w-10"
+              width="40"
+              height="40"
+            />
+          </picture>
+          <address>
+            <span class="font-extrabold not-italic">Greg Hooper</span>
+          </address>
+        </footer>
+      </article>
+    </main>
     <footer>
       <p class="text-center text-[#3C3D3D]">
         Challenge by
         <a
           href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          class="text-violet-600 outline-neutral-900 visited:text-violet-400"
+          title="Visit the website"
+          class="footer__link"
           >Frontend Mentor</a
         >. <br />
-        Coded with ❤️ by
+        Coded with <span class="text-pink-600">❤</span> by
         <a
           href="https://github.com/ddZ6ii"
-          target="_blank"
-          class="text-violet-600 outline-neutral-900 visited:text-violet-400"
+          title="Visit Github profile"
+          class="footer__link"
           >ddZ6ii</a
         >.
       </p>
